@@ -1,0 +1,525 @@
+.routes-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #3b82f6 100%);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.routes-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.routes-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.route-filter {
+  background-color: var(--white);
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+  color: var(--neutral-gray);
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-tab:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.filter-tab.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.routes-grid-section {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.routes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.route-card {
+  background: var(--white);
+  border: 2px solid var(--light-gray);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.route-card:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15);
+}
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+  flex-shrink: 0;
+}
+
+.route-header h3 {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.route-price {
+  background: var(--accent-orange);
+  color: var(--white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.route-details {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.route-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.info-label {
+  color: var(--neutral-gray);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.route-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.route-actions .btn {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+}
+
+.fare-info {
+  background-color: var(--light-gray);
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.fare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fare-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.fare-card:hover {
+  transform: translateY(-5px);
+}
+
+.fare-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.fare-card h4 {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.fare-card p {
+  color: var(--neutral-gray);
+  line-height: 1.6;
+}
+
+.booking-tips {
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.tip-card {
+  background: var(--white);
+  border: 2px solid var(--light-gray);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+  border-color: var(--accent-orange);
+  transform: translateY(-3px);
+}
+
+.tip-card h4 {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tip-card p {
+  color: var(--neutral-gray);
+  line-height: 1.6;
+}
+
+/* Desktop Responsive */
+@media (min-width: 1200px) {
+  .routes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .routes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .routes-hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .routes-hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+  
+  .filters {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  
+  .filter-group {
+    flex: 1;
+  }
+  
+  .routes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .fares-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .routes-hero {
+    padding: 3rem 0;
+  }
+  
+  .routes-hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  .routes-hero-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .route-filter {
+    padding: 1.5rem 0;
+  }
+  
+  .filter-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0 1rem 1rem;
+    gap: 0.75rem;
+  }
+  
+  .filter-tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .routes-grid-section {
+    padding: 2rem 0;
+  }
+  
+  .routes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .route-card {
+    padding: 1.25rem;
+  }
+  
+  .route-header h3 {
+    font-size: 1rem;
+  }
+  
+  .route-price {
+    font-size: 0.85rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .route-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .route-actions .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+  
+  .fare-info {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .fare-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .fare-card {
+    padding: 1.5rem;
+  }
+  
+  .fare-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .fare-card p {
+    font-size: 0.9rem;
+  }
+  
+  .booking-tips {
+    padding: 3rem 0;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .tip-card {
+    padding: 1.5rem;
+  }
+  
+  .tip-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .tip-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .routes-hero {
+    padding: 2rem 0;
+  }
+  
+  .routes-hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  
+  .routes-hero-content p {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+  
+  .route-filter {
+    padding: 1rem 0;
+  }
+  
+  .filter-tabs {
+    padding: 0 0.75rem 1rem;
+  }
+  
+  .filter-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .routes-grid-section {
+    padding: 1.5rem 0;
+  }
+  
+  .routes-grid {
+    padding: 0 0.75rem;
+  }
+  
+  .route-card {
+    padding: 1rem;
+  }
+  
+  .route-header h3 {
+    font-size: 0.95rem;
+  }
+  
+  .route-price {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .route-actions .btn {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.85rem;
+  }
+  
+  .fare-info {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fare-grid {
+    padding: 0 0.75rem;
+  }
+  
+  .fare-card {
+    padding: 1.25rem;
+  }
+  
+  .fare-card h4 {
+    font-size: 1rem;
+  }
+  
+  .fare-card p {
+    font-size: 0.85rem;
+  }
+  
+  .booking-tips {
+    padding: 2rem 0;
+  }
+  
+  .tips-grid {
+    padding: 0 0.75rem;
+  }
+  
+  .tip-card {
+    padding: 1.25rem;
+  }
+  
+  .tip-card h4 {
+    font-size: 1rem;
+  }
+  
+  .tip-card p {
+    font-size: 0.85rem;
+  }
+}
